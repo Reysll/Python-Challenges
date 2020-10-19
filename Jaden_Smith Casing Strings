@@ -1,0 +1,13 @@
+def to_jaden_case(string):
+    result = ""
+    list = string.split()
+    for x in list:
+        if len(result)>0:
+            result= result + " " + x.strip().capitalize()
+        else:
+            result=x.capitalize()
+    
+    if not result:
+        return string
+    else:
+        return result
