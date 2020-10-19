@@ -1,0 +1,16 @@
+def iq_test(numbers):
+    evenindex=[]
+    oddindex=[]
+    index=0
+    y=numbers.split(' ')
+    for x in y:
+        if  int(x) % 2 == 0:
+            index+=1
+            evenindex.append(index)
+        else:
+            index+=1
+            oddindex.append(index)
+    if len(oddindex) < len(evenindex):
+        return oddindex[0]
+    else:
+        return evenindex[0]
