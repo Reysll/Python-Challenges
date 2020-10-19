@@ -1,0 +1,6 @@
+def DNA_strand(dna):
+    dir= {"T":"A","A":"T","C":"G","G":"C"}
+    dna2=[]
+    for x in dna:
+        dna2.append(dir[x])    
+    return ''.join(dna2)
