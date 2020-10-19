@@ -1,0 +1,15 @@
+def duplicate_count(text):
+    repeat=0
+    text=text.lower()
+    index=0
+    seen={}
+    for char in text:
+        if char not in seen:
+            seen[char]=(0)
+        else:
+            seen[char]+=1
+    for char in seen:
+        if seen[char]>=1:
+            repeat+=1
+    return repeat
+
